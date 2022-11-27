@@ -13,6 +13,7 @@ export default async function SSRLayout({
   // Set up SSR headers here.
   const apolloClient = initializeApollo({
     headers: {
+      // This is the important part, we need to set the cookie header here.
       authorization: cookies().get("authToken")?.value ?? "",
     },
   });

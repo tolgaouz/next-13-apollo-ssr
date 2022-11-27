@@ -16,7 +16,7 @@ export default async function RootLayout({
         <Link href="/ssr">Go to SSR</Link>
         <p>
           Try navigating between the links, notice if you refresh your page at
-          the `/ssr` route, if you go to the CSR page the query is cached.
+          the `/ssr` route, then go to the CSR page, the query is cached.
         </p>
         <Apollo
           apolloState={JSON.stringify(getRequestStorage().apolloState ?? "{}")}
