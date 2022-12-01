@@ -5,7 +5,7 @@ import Link from "next/link";
 export default async function RootLayout({
   children,
 }: {
-  children: JSX.Element;
+  children: React.ReactNode;
 }) {
   return (
     <html>

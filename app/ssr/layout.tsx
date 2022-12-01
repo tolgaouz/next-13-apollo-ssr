@@ -8,7 +8,7 @@ import { getRequestStorage } from "@/lib/localStorage";
 export default async function SSRLayout({
   children,
 }: {
-  children: JSX.Element;
+  children: React.ReactNode;
 }) {
   // Set up SSR headers here.
   const apolloClient = initializeApollo({
